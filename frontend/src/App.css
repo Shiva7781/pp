@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navbar */
+nav {
+  /* border: 1px solid red; */
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+  margin: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* form */
+
+.signup_page,
+.login_page {
+  width: 360px;
+  padding: 8% 0 0 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  max-width: 360px;
+  margin: 0 auto 18px;
+  padding: 45px;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form h3 {
+  margin: 0 0 11px;
+  color: rgb(183, 239, 98);
+}
+
+.form input {
+  font-family: serif;
+  outline: 0;
+  background: rgba(218, 211, 211, 0.908);
+  width: 100%;
+  border: 0;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  border-radius: 0.25rem;
+}
+
+.form button {
+  font-family: serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: rgb(149, 209, 59);
+  width: 100%;
+  border: 0;
+  margin: 0 0 1rem;
+  padding: 15px;
+  font-size: 0.8rem;
+  border-radius: 0.25rem;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form + div > a {
+  color: rgb(125, 200, 13);
+}
+
+/* UserDetails */
+
+.UserDetails > img {
+  width: 7rem;
+  border-radius: 50%;
+  margin-top: 3rem;
+}
+
+/* AllImages */
+.AllImages {
+  margin: 5rem 0 0 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.AllImages > div {
+  /* border: 1px solid red; */
+  border-radius: 11px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.AllImages img {
+  width: 100px;
+  height: 100px;
+}
