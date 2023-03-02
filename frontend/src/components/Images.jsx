@@ -35,7 +35,7 @@ const Images = () => {
   const fetchData = async () => {
     try {
       let { data } = await axios.get(
-        `https://picsum.photos/v2/list?limit=5&page=${page}`
+        `https://picsum.photos/v2/list?limit=10&page=${page}`
       );
       //   console.log("data:", data);
 
