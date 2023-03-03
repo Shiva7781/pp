@@ -104,14 +104,15 @@ a {
 
 /* AllImages */
 .AllImages {
-  margin: 5rem 0 0 0;
+  margin: 5rem 1rem;
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  /* grid-template-columns: 1fr; */
 }
 
 .AllImages > div {
   /* border: 1px solid red; */
+
   border-radius: 11px;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -120,4 +121,15 @@ a {
 .AllImages img {
   width: 100px;
   height: 100px;
+  border-radius: 0.5rem;
+}
+
+.Card:nth-child(odd) {
+  margin-right: 50%;
+  /* background-color: red; */
+}
+.Card:nth-child(even) {
+  margin-left: 50%;
+
+  /* background-color: aqua; */
 }

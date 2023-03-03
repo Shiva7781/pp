@@ -57,7 +57,7 @@ const Images = () => {
           const { author, width, height, url, download_url } = v;
 
           return (
-            <div>
+            <div className="Card">
               <img src={download_url} alt="" />
               <h3>{author}</h3>
             </div>

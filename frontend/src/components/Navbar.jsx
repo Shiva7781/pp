@@ -9,10 +9,10 @@ const Navbar = () => {
     <nav>
       <ul>
         <li onClick={() => logout()}>
-          <NavLink>{user ? "Logout" : ""}</NavLink>
+          <NavLink to="/">{user ? "Logout" : ""}</NavLink>
         </li>
         <li>
-          <NavLink> {user ? "" : "SignUp"} </NavLink>
+          <NavLink to="/signup"> {user ? "" : "SignUp"} </NavLink>
         </li>
       </ul>
     </nav>
